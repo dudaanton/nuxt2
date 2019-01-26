@@ -1,0 +1,35 @@
+$a-duration: .3s
+$a-timing: ease
+
+@keyframes required
+  10%
+    left: 3px
+  20%
+    left: 0
+  30%
+    right: 3px
+  40%
+    right: 0
+  50%
+    left: 3px
+  60%
+    left: 0
+  70%
+    right: 3px
+  80%
+    right: 0
+
+@keyframes placeholder
+  0%
+    background-position: 100% 0
+
+  100%
+    background-position: 0 0
+
+.placeholder-enter-active,
+.placeholder-leave-active
+  transition: opacity $a-duration $a-timing
+
+.placeholder-leave-to,
+.placeholder-enter
+  opacity: 0
